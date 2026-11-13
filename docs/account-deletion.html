@@ -10,9 +10,25 @@
         h2 { color: #2c3e50; margin-top: 30px; }
         p { margin-bottom: 15px; }
         ul { margin-bottom: 15px; }
-        .button { display: inline-block; background-color: #d32f2f; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; margin: 20px 0; }
+        
+        /* Updated Button CSS */
+        .button-container { margin: 30px 0; }
+        .button { 
+            display: inline-block; 
+            background-color: #d32f2f; 
+            color: white; 
+            padding: 14px 28px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: bold; 
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
         .button:hover { background-color: #b71c1c; }
+        
         .box { background-color: #f9f9f9; border-left: 4px solid #d32f2f; padding: 15px; margin: 20px 0; }
+        .email-text { font-weight: bold; font-size: 1.1em; color: #d32f2f; user-select: all; }
         .footer { margin-top: 50px; font-size: 0.9em; color: #777; border-top: 1px solid #eaeaea; padding-top: 20px; text-align: center; }
     </style>
 </head>
@@ -33,9 +49,19 @@
     </ul>
 
     <h3>Option 2: Web-Based Request</h3>
-    <p>If you have uninstalled the app or cannot access it, you can request account deletion via email. Please click the button below to send an email from the address associated with your Megenagna account.</p>
+    <p>If you have uninstalled the app or cannot access it, you can request account deletion via email. Please send an email from the address associated with your Megenagna account.</p>
     
-    <a href="mailto:endaleabinet67@gmail.com?subject=Account%20Deletion%20Request&body=Please%20delete%20my%20Megenagna%20account%20and%20all%20associated%20data.%20My%20registered%20email%20is%3A%20%5BINSERT%20YOUR%20EMAIL%20HERE%5D" class="button">Request Deletion via Email</a>
+    <div class="button-container">
+        <!-- Updated mailto link using your real email -->
+        <a href="mailto:endaleabinet67@gmail.com?subject=Account%20Deletion%20Request%20-%20Megenagna&body=Hello%20Megenagna%20Support%2C%0A%0APlease%20delete%20my%20Megenagna%20account%20and%20all%20associated%20data.%20My%20registered%20email%20is%3A%20%5BINSERT%20YOUR%20EMAIL%20HERE%5D%0A%0AThank%20you." class="button">Request Deletion via Email</a>
+    </div>
+
+    <div class="box">
+        <p><strong>Button not working?</strong></p>
+        <p>If clicking the button above does not open your email app, please manually send an email to:</p>
+        <p class="email-text">endaleabinet67@gmail.com</p>
+        <p>With the subject: <strong>Account Deletion Request - Megenagna</strong></p>
+    </div>
 
     <div class="box">
         <p><strong>Important:</strong> Please ensure you send the email from the exact email address you used to register for Megenagna. If you cannot, our support team may ask you to verify your identity before processing the deletion to prevent unauthorized account removal.</p>
